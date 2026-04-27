@@ -9,7 +9,7 @@ export function useScrollReveal(threshold = 0.15) {
   onMounted(() => {
     observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry && entry.isIntersecting) {
           isVisible.value = true
           observer?.disconnect()
         }
