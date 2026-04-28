@@ -51,6 +51,8 @@ export interface RestaurantInfo {
   aboutText: string
   aboutImage: string
   whatsappNumber: string
+  whatsappHref: string
+  mapEmbedUrl: string
   reservationHref: string
   menuHref: string
   copyright: string

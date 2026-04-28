@@ -50,7 +50,7 @@ const closeMenu = () => {
 
       <!-- Botón WhatsApp (escritorio) -->
       <a
-        :href="`https://wa.me/${restaurant.whatsappNumber}`"
+        :href="restaurant.whatsappHref"
         target="_blank"
         rel="noopener noreferrer"
         class="hidden md:flex items-center gap-2 bg-green-500 hover:bg-green-600 active:scale-95 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-lg hover:shadow-green-500/30"
@@ -103,7 +103,7 @@ const closeMenu = () => {
           </li>
           <li>
             <a
-              :href="`https://wa.me/${restaurant.whatsappNumber}`"
+              :href="restaurant.whatsappHref"
               target="_blank"
               rel="noopener noreferrer"
               class="flex items-center gap-2 bg-green-500 text-white font-semibold px-4 py-2.5 rounded-full w-fit mt-2"

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { contactInfo } from '@/data/config'
+import { contactInfo, restaurant } from '@/data/config'
 import { useScrollReveal } from '@/composables/useScrollReveal'
 
 const { sectionRef, isVisible } = useScrollReveal()
@@ -46,6 +46,20 @@ const { sectionRef, isVisible } = useScrollReveal()
           {{ info.value }}
         </p>
       </a>
+    </div>
+
+    <!-- Google Maps embed -->
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 mt-12">
+      <div class="overflow-hidden rounded-2xl shadow-lg">
+        <iframe
+          :src="restaurant.mapEmbedUrl"
+          class="w-full h-[300px] md:h-[400px] border-0"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Ubicación de La Mesa Grande en Google Maps"
+        />
+      </div>
     </div>
   </section>
 </template>

@@ -51,9 +51,7 @@ const { sectionRef, isVisible } = useScrollReveal()
           quede visible sin desbordar el grid hacia la derecha.
         -->
         <!-- flex + justify-center garantiza centrado horizontal en mobile -->
-        <div class="flex justify-center w-full pt-4 md:pt-4 md:pr-4 relative">
-          <div class="hidden md:block absolute top-0 right-0 bottom-4 left-4 border-2 border-primary rounded-2xl" />
-
+        <div class="flex justify-center w-full">
           <div class="relative z-10 overflow-hidden foto-card w-full max-w-sm md:max-w-none block mx-auto">
             <img
               :src="restaurant.aboutImage"

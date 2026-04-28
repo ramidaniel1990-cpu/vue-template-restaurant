@@ -29,6 +29,11 @@ export const restaurant: RestaurantInfo = {
     'Desde 1985, La Mesa Grande es el lugar donde las familias colombianas se reúnen para compartir momentos inolvidables. Nuestra cocina nace de recetas heredadas de generación en generación, preparadas con los ingredientes más frescos de la región. Cada plato es un viaje al sabor auténtico de nuestra tierra.',
   aboutImage: localImg,
   whatsappNumber: '+573001234567',
+  whatsappHref:
+    'https://wa.me/573001234567?text=Hola!%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20hacer%20una%20reserva%20en%20La%20Mesa%20Grande%20%F0%9F%8D%BD%EF%B8%8F',
+  // Reemplaza con el embed de Google Maps de tu ubicación exacta
+  mapEmbedUrl:
+    'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127271.08296636907!2d-74.13394205488281!3d4.648619999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2sBogot%C3%A1%2C%20Colombia!5e0!3m2!1ses!2sco!4v1620000000000!5m2!1ses!2sco',
   reservationHref: '#contacto',
   menuHref: '#menu',
   copyright: '© 2025 La Mesa Grande. Todos los derechos reservados.',
@@ -242,7 +247,7 @@ export const contactInfo: ContactInfo[] = [
 export const socialButtons: SocialButton[] = [
   {
     name: 'WhatsApp',
-    href: 'https://wa.me/573001234567',
+    href: 'https://wa.me/573001234567?text=Hola!%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20hacer%20una%20reserva%20en%20La%20Mesa%20Grande%20%F0%9F%8D%BD%EF%B8%8F',
     icon: 'whatsapp',
     bgStyle: 'background-color: #25D366',
   },
